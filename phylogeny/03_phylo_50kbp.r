@@ -1,3 +1,5 @@
+## The copyright of this script belongs to Joe Manthey ##
+
 options(scipen=999)
 project_directory <- "/lustre/scratch/sboyane/camponotus/07_phylo_OH"
 directory_name <- "tree_50kbp"
