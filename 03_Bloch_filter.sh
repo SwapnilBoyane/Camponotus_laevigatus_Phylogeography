@@ -10,7 +10,7 @@ module load intel vcftools
 module load intel bcftools
 
 # define main working directory
-workdir=/lustre/scratch/sboyane/blocmannia
+workdir=/lustre/scratch/sboyane/blochmannia
 
 #run vcftools with SNP output spaced 20kbp
 #for PCA, EEMS, IBD 
