@@ -1,7 +1,7 @@
 #The code is adapted from https://github.com/jdmanthey/camponotus_relatedness_revised.
 
 ############################## Plot Kinship #############################
-####
+####                                                                 ####
 #########################################################################
 #set wording directory
 setwd("/Volumes/Swapnil_T7/Camponotus/04_related_vcf_20kbp")
