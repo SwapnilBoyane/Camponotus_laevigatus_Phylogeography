@@ -24,6 +24,6 @@ vcftools --vcf ${workdir}/03_vcf/blochmannia_final.g.vcf --max-missing 0.8 --min
 
 # bgzip and tabix index files that will be subdivided into windows
 # directory 1
-/lustre/work/johruska/miniconda2/bin/bgzip ${workdir}/05_phylo_vcf/blochmannia_final_phylo.recode.vcf
+bgzip ${workdir}/05_phylo_vcf/blochmannia_final_phylo.recode.vcf
 #tabix
-/lustre/work/johruska/miniconda2/bin/tabix -p vcf ${workdir}/05_phylo_vcf/blochmannia_final_phylo.recode.vcf.gz
+tabix -p vcf ${workdir}/05_phylo_vcf/blochmannia_final_phylo.recode.vcf.gz
