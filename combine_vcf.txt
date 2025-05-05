@@ -1,0 +1,7 @@
+#combining vcf
+
+grep "#" scaffold0001__a.recode.vcf > scaffold0001.recode.vcf
+
+for i in $( ls  scaffold0001__a.recode.vcf.gz scaffold0001__b.recode.vcf.gz scaffold0001__c.recode.vcf.gz ); do
+grep -v "#" $i >> scaffold0001.recode.vcf;
+done
