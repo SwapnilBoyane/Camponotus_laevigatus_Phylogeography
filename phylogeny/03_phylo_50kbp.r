@@ -11,7 +11,7 @@ max_number_jobs <- 1000
 ref_index <- read.table("06_camp_sp_genome_filtered.fasta.fai", stringsAsFactors=F)
 
 # define window size
-window_size <- 10000
+window_size <- 50000
 
 # make directories
 dir.create(directory_name)
