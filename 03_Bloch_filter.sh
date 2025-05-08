@@ -14,7 +14,7 @@ workdir=/lustre/scratch/sboyane/blochmannia
 
 #run vcftools with SNP output spaced 20kbp
 #for PCA, EEMS, IBD 
-vcftools --vcf ${workdir}/03_vcf/blochmannia_final.g.vcf --keep keeplist_pca.txt --max-missing 1.0   --minDP 50  --min-alleles 2 --max-alleles 2 --mac 2  --max-maf 0.49  --recode --recode-INFO-all --out ${workdir}/04_filtered_vcf/blochmannia_final
+vcftools --vcf ${workdir}/03_vcf/blochmannia_final.g.vcf --keep keeplist_pca.txt --max-missing 1.0   --minDP 6  --min-alleles 2 --max-alleles 2 --mac 2  --max-maf 0.49  --recode --recode-INFO-all --out ${workdir}/04_filtered_vcf/blochmannia_final
 
 # run vcftools with SNP and invariant site output, 20% max missing data, no indels 
 #for Phylogeny 
