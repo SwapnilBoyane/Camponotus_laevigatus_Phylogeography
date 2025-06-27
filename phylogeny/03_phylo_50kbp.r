@@ -8,7 +8,7 @@ max_number_jobs <- 1000
 
 # read in reference index
 # filtered to only include genotyped chromosomes
-ref_index <- read.table("06_camp_sp_genome_filtered.fasta.fai", stringsAsFactors=F)
+ref_index <- read.table("02_camp_sp_genome_filtered.fasta.fai", stringsAsFactors=F)
 
 # define window size
 window_size <- 50000
