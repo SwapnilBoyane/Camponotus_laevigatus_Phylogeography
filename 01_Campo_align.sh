@@ -10,7 +10,7 @@
 
 module load intel java bwa samtools
 # define main working directory
-workdir=/lustre/scratch/sboyane/camponotus
+workdir=/lustre/scratch/sboyane/camplaevi
 
 # define the location of the reference mitogenomes
 mito=/home/jmanthey/denovo_genomes/formicinae_mitogenomes.fasta
