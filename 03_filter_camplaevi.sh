@@ -6,14 +6,16 @@
 #SBATCH --time=48:00:00
 #SBATCH --mem-per-cpu=8G
 #SBATCH --array=1-45
-#total 45 jobs
+
+
 module load intel vcftools
 module load intel bcftools
+
 # define input files from helper file during genotyping
 input_array=$( head -n${SLURM_ARRAY_TASK_ID} vcf_list.txt | tail -n1 )
 
 # define main working directory
-workdir=/lustre/scratch/sboyane/camponotus
+workdir=/lustre/scratch/sboyane/camplaevi/01_blochmannia
 
 #run vcftools with SNP output spaced 20kbp
 #for ADMIXTURE, PCA, EEMS, IBD 
@@ -33,6 +35,6 @@ vcftools --vcf ${workdir}/03_vcf/${input_array}.g.vcf --keep keeplist.txt --max-
 
 # bgzip and tabix index files that will be subdivided into windows
 # directory 1
-/lustre/work/johruska/miniconda2/bin/bgzip ${workdir}/phylo/${input_array}.recode.vcf
+bgzip ${workdir}/phylo/${input_array}.recode.vcf
 #tabix
-/lustre/work/johruska/miniconda2/bin/tabix -p vcf ${workdir}/phylo/${input_array}.recode.vcf.gz
+tabix -p vcf ${workdir}/phylo/${input_array}.recode.vcf.gz
