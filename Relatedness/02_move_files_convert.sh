@@ -1,6 +1,6 @@
 interactive -p quanah
 
-cd /lustre/scratch/sboyane/camponotus/06_related_files
+cd /lustre/scratch/sboyane/camplaevi/06_related_files
 
 # copy files
 cp ../admix20kbp/*simple* .
