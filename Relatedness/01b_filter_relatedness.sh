@@ -12,7 +12,7 @@ module load intel vcftools
 #input_array=$( head -n${SLURM_ARRAY_TASK_ID} vcf_list.txt | tail -n1 )
 
 # define main working directory
-workdir=/lustre/scratch/sboyane/camponotus
+workdir=/lustre/scratch/sboyane/camplaevi/01_blochmannia
 
 # run vcftools with SNP output spaced 20kbp 
 vcftools --vcf ${workdir}/03_vcf/${input_array}.g.vcf --keep keeplist.txt --max-missing 1.0   --minDP 6 --max-meanDP 50 --min-alleles 2 --max-alleles 2 --mac 1 --thin 20000 --max-maf 0.49  --recode --recode-INFO-all --out ${workdir}/04_related_vcf_20kbp/${input_array}
