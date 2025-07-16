@@ -1,0 +1,23 @@
+########### RUN PCA ANALYSIS ###########
+
+#start interactive session
+interactive -c 4 -p nocona
+
+conda activate plink
+
+cd /lustre/scratch/sboyane/camplaevi/05_filtered_vcf/20kbp_pca
+
+grep "#" scaffold0001.recode.vcf > pca_20kbp.all.vcf
+
+for i in $( ls *recode.vcf ); do
+grep -v "#" $i >> pca_20kbp.all.vcf;
+done
+
+#for PCA 
+plink --vcf pca_20kbp.all.vcf --allow-extra-chr --double-id --set-missing-var-ids @:# --pca --out pca_20kbp 
+
+cd /lustre/scratch/sboyane/camplaevi/01_blochmannia/05_filtered_vcf
+
+##### PCA for Blochmannia ####
+~/anaconda3/bin/plink --vcf bloch_camplaevi_final.recode.vcf --allow-extra-chr --double-id --set-missing-var-ids @:# --pca --out bloch_camplaevi
+
