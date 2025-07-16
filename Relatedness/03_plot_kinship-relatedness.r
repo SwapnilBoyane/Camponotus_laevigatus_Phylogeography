@@ -60,7 +60,7 @@ abline(lm(laev2$KINGrobust ~ laev2$distance_km))
 summary(lm(calculated_stat ~ distance_km, data = laev2))
 
 #save as pdf 
-pdf("7062023_R1vsR0_final.pdf", height = 6, width = 5)
+pdf("R1vsR0_final.pdf", height = 6, width = 5)
 #plot R1 vs R0
 ggplot(laev2, aes(x = R1, y = R0)) +
   geom_point(data = laev2[laev2$distance_km > 1,  ], col = "#CF0A0A", alpha = 0.6, size = 3.9) +
@@ -73,7 +73,7 @@ ggplot(laev2, aes(x = R1, y = R0)) +
   theme_linedraw()
 dev.off()
 
-pdf("7062023_R1vsKingRobust_final.pdf", height = 6, width = 5)
+pdf("R1vsKingRobust_final.pdf", height = 6, width = 5)
 #plot R1 vs KingRobust
 ggplot(laev2, aes(x = R1, y = KINGrobust)) +
   geom_point(data = laev2[laev2$distance_km > 1,  ], col = "#CF0A0A", alpha = 0.6, size = 4) +
