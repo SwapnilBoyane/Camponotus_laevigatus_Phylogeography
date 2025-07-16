@@ -1,0 +1,9 @@
+datapath = /lustre/scratch/sboyane/camponotus/eems
+mcmcpath = /lustre/scratch/sboyane/camponotus/eems/output
+nIndiv = 29
+nSites = 13252
+nDemes = 200
+diploid = true
+numMCMCIter = 2000000
+numBurnIter = 1000000
+numThinIter = 9999
