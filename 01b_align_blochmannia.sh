@@ -9,7 +9,7 @@
 
 module load intel java bwa samtools
 # define main working directory
-workdir=/lustre/scratch/sboyane/blocmannia	
+workdir=/lustre/scratch/sboyane/camplaevi/01_blochmannia	
 
 basename_array=$( head -n${SLURM_ARRAY_TASK_ID} ${workdir}/00_fastq/basenames.txt | tail -n1 )
 
