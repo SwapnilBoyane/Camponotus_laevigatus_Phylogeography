@@ -4,7 +4,7 @@
 #SBATCH --partition=quanah
 #SBATCH --nodes=1 --ntasks=12
 #SBATCH --time=48:00:00
-#SBATCH --mem-per-cpu=8G
+#SBATCH --mem-per-cpu=8G 
 #SBATCH --array=1-30
 
 module load intel java bwa samtools
