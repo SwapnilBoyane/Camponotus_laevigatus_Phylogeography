@@ -6,11 +6,11 @@
 #SBATCH --time=48:00:00
 #SBATCH --mem-per-cpu=8G
 
-. ~/anaconda3/etc/profile.d/conda.sh
+
 conda activate samtools
 
 # Set working directory
-workdir=/lustre/scratch/sboyane/blocmannia
+workdir=/lustre/scratch/sboyane/camplaevi/01_blochmannia
 
 # Calculate the depth of coverage per site
 samtools depth -a ${workdir}/02_bam_files > ${workdir}/depth/species_depth.txt
