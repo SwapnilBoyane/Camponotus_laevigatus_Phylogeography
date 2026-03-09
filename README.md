@@ -1,4 +1,4 @@
-# Camponotus_laevigatus_Phylogeography
+# Codiversification phylogeography of **Camponotus laevigatus** and its endosymbiont
 
 # C. laevigatus (host)
 1. set up directories: 
