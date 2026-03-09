@@ -32,7 +32,7 @@
 
 **Phylogeny of endosymbiont**
 
-I used https://github.com/edgardomortiz/vcf2phylip/blob/master/vcf2phylip.py to convert vcf format snps to phylip format. 
+I used https://github.com/edgardomortiz/vcf2phylip/blob/master/vcf2phylip.py to convert vcf format snps to phylip format and then ran RAxML analysis.
 
 **EEMS**
 
