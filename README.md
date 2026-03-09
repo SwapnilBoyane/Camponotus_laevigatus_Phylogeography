@@ -17,7 +17,7 @@
 5. Run "02a_genotype_site_per_indivi.sh" to conut total genotyped sites.
 6. Run "03_filter_blochmannia.sh" to filter SNPs for downstream analyses.
 
-**Analyses**
+# Analyses
 
 **Population Structure**
 1. Run "01_PCA_analysis" to perform Principal component analysis for both host and endosymbiont.
