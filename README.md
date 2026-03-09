@@ -31,6 +31,7 @@
 5. 05_species_trees.sh: contains script to generate Maximum Clade Credibility tree using DendroPy and a species tree using ASTRAL.
 
 **Phylogeny of endosymbiont**
+
 I used https://github.com/edgardomortiz/vcf2phylip/blob/master/vcf2phylip.py to convert vcf format snps to phylip format. 
 
 **EEMS**
