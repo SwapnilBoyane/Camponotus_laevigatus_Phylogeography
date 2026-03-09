@@ -11,8 +11,9 @@ cd /lustre/scratch/sboyane/camplaevi/gadma
 
 source activate easySFS
 
+
 # run easySFS, first in preview mode then for real based on the preview
-# projection based on downsampled (1 snp per chrom) with Z was --proj=10,10,20
+# projection based on downsampled --proj=10,10,20
 
 ~/easySFS/easySFS.py \
   -i combined_10mis_variant.vcf \
