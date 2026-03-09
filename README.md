@@ -16,4 +16,9 @@
 4. Run "02_blochmannia_genotyping.sh" to genotype. Note: "--ploidy 1" was mentioned during genotyping.
 5. Run "02a_genotype_site_per_indivi.sh" to conut total genotyped sites.
 6. Run "03_filter_blochmannia.sh" to filter SNPs for downstream analyses.
-   
+
+**** Analyses ****
+Run "01_PCA_analysis" to perform Principal component analysis for both host and endosymbiont.
+Run "02_Admixture.sh" to perform ADMIXTURE analysis.
+
+
