@@ -1,0 +1,32 @@
+# Parameter file
+# Output and input
+Output directory: gadma_output_mis10_november_101020
+Input data: easysfs_final_nov_101020/dadi/South-West-North.sfs
+Population labels: South, West, North
+
+# Settings
+#SNPs 4954679; invariant
+Sequence length: 184409011
+Linked SNP's: True
+Projections: [10, 10, 20]
+
+# Main parameters
+Engine: moments
+Relative parameters: False
+
+# based on Smed estimate
+Mutation rate: 1.983877e-09
+Time for generation: 6
+
+# History parameters
+Initial structure: [1,1,1]
+Final structure: [1,1,1]
+Symmetric migrations: False
+
+# Output params
+Model plot engine: moments
+Units of time in drawing: years
+
+# Run params
+Number of repeats: 10
+Number of processes: 10
