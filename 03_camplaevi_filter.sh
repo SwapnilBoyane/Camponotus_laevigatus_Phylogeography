@@ -38,3 +38,11 @@ vcftools --vcf ${workdir}/03_vcf/${input_array}.g.vcf --keep keeplist.txt --max-
 bgzip ${workdir}/phylo/${input_array}.recode.vcf
 #tabix
 tabix -p vcf ${workdir}/phylo/${input_array}.recode.vcf.gz
+
+# gadma only biallelic sites
+vcftools --vcf ${workdir}/03_vcf/${input_array}.g.vcf --keep keeplist_gadma.txt --max-missing 0.9 --minDP 6 --max-meanDP 35 --min-allel>
+ --remove-indels  --recode --recode-INFO-all --out ${workdir}/gadma/variant/${input_array}_gadma_biallelic
+
+# gadma only invariant sites
+vcftools --vcf ${workdir}/03_vcf/${input_array}.g.vcf --keep keeplist_gadma.txt --max-missing 0.9 --minDP 6 --max-meanDP 35 --max-allel>
+ --remove-indels  --recode --recode-INFO-all --out ${workdir}/gadma/invariant/${input_array}_gadma_invariant
