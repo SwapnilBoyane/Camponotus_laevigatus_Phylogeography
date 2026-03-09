@@ -1,6 +1,0 @@
-Grep Cmd:
-
-grep -Ff keeplist.txt samplelist.csv > filtered_samplelist.txt
- Above command wil filter : 
- 			-F: Treat patterns as fixed strings (not regex)
-			-f keeplist.txt: Read patterns (IDs) from the keeplist file
