@@ -10,4 +10,4 @@ source activate eems
 
 module load gnu/5.4.0
 
-/lustre/work/sboyane/eems/runeems_snps/src/runeems_snps --params blochmannia_eems.params --seed 123v
+/lustre/work/sboyane/eems/runeems_snps/src/runeems_snps --params blochmannia_eems.params --seed 123
