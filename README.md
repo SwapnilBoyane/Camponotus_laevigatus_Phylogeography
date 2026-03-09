@@ -55,6 +55,13 @@
 4. 03_plot_kinship-relatedness.r: plotting script for relatedness analsys.
 5. vcf_to_related.r: script to convert vcf to related for the analysis.
 
+*GADMA*
+1. _01_make_GADMA_input.sh: run --preview and make SFS for GADMA.
+2. _02_GADMA_run.sh: contains script to run GADMA.
+3. param_easySFS_3_gadma_years101020.txt: parameters used in GADMA
+   
+5. 
+
 
 
 
