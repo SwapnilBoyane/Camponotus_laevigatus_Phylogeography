@@ -26,7 +26,7 @@
 **Phylogeny**
 1. 01_concatenate_vcf_files.sh: Concatenate the vcf files.
 2. 02_camp_sp_genome_filtered.fasta.fai: Reference index file
-3. 03_phylo_50kbp.r: This creates the tree_100kbp/ directory containing the phylo100kbp_array.sh submission script. Submit "phylo100kbp_array.sh" to array job for running.
+3. 03_phylo_50kbp.r: This creates the tree_50kbp/ directory containing the phylo50kbp_array.sh submission script. Submit "phylo50kbp_array.sh" to array job for running.
 4. 04_combine_trees_Camponotus.r: Combine all individual RAxML_bipartitions.tre files into a single file.
 5. 05_species_trees.sh: contains script to generate Maximum Clade Credibility tree using DendroPy and a species tree using ASTRAL.
 
