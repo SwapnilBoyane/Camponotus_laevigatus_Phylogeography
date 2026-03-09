@@ -14,4 +14,8 @@ source activate gadma_env
 
 # initiaul run
 
-/home/sboyane/anaconda3/envs/gadma_env/bin/gadma -p param_easySFS_3_gadma_years.txt
+~/anaconda3/envs/gadma_env/bin/gadma -p param_easySFS_3_gadma_years101020.txt
+
+~/anaconda3/envs/gadma_env/bin/gadma --resume gadma_output_mis10_november_101020  -o gadma_output_mis10_november_101020_2
+
+~/anaconda3/envs/gadma_env/bin/gadma --resume gadma_output_mis10_november_101020_2  -o gadma_output_mis10_november_101020_3
