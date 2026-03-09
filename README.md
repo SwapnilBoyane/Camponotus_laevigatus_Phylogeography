@@ -48,6 +48,13 @@
 5. blochmannia_eems.params: Contains parameter for EEMS
 6. _run_blochmannia_eems.sh: Slurm array job for EEMS
 
+*Relatedness*
+1. 01_concatenate_vcf_files.sh: Concatenate the vcf files.
+2. 01b_filter_relatedness.sh: filtering script for relatedness analysis.
+3. 02_move_files_convert.sh: convert simple vcf to .related format.
+4. 03_plot_kinship-relatedness.r: plotting script for relatedness analsys.
+5. vcf_to_related.r: script to convert vcf to related for the analysis.
+
 
 
 
